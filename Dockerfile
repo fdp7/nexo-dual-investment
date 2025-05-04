@@ -44,5 +44,7 @@ COPY . /app
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
+EXPOSE 10000
+
 # Avvio dell'applicazione (modifica se usi uvicorn o altro)
 CMD ["python", "main.py"]
